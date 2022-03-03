@@ -67,5 +67,9 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        'login' => ['before' => ['/']],
+        // 'role' => ['before' => ['account/*']],
+        // 'permission' => ['before' => ['account/*']],
+    ];
 }
